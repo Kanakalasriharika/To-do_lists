@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f6ff74;
+  font-family: "Tahoma", sans-serif;
+  height: 100vh;
+  display: inline-block;
+  font-size: 18px;
+  padding: 50px;
+  overflow: scroll;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.list-to-do {
+  position: relative;
+  justify-content: center;
+  align-items: top;
+  margin: auto;
+  background: #ffffffa6;
+  width: 420px;
+  padding: 25px 30px;
+  border-radius: 7px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+.title {
+  text-align: center;
+  font-weight: 650;
+  margin-bottom: 15px;
+  color: #1b1b1b;
+}
+.form {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  justify-content: space-between;
+}
+.form input {
+  width: 70%;
+  outline: none;
+  border: 5px solid #080808bf;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0 10px;
+  color: #000;
+  font-family: "Tahoma", sans-serif;
+}
+.todo-app-btn {
+  height: 40px;
+  border: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  background: #fe6b09a6;
+  color: rgba(255, 255, 255, 0.877);
+  cursor: pointer;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.todo-app-btn:hover {
+  background: #034880;
+}
+.todo-app-list {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-height: 240px;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.list {
+  background: #ffffff;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #1b1b1b;
+}
+.list p {
+  flex: 1;
+  margin-left: 10px;
+}
+.list span {
+  align-items: flex-end;
+}
+
+.list .close {
+  color: #ee3131;
+}
+.list.completed {
+  background: #8a8a8a50;
+}
+.list.completed p {
+  color: #757575;
+  text-decoration: line-through;
+}
